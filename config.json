@@ -1,7 +1,7 @@
 {
     "train_batch_size": 4,
     "test_batch_size": 2,
-    "gpus": 0,
+    "gpus": 1,
     "lr": 0.0001,
     "lr_backbone": 1e-05,
     "weight_decay": 0.0001,
