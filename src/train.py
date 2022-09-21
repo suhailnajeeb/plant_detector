@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 @author: A.Akdogan
+
+python train.py -n 'train_folder_path' -t 'test_folder_path'
+
 """
 
 from coco_detection import CocoDetection
@@ -78,8 +81,11 @@ class Train:
 
     def get_json_files(self):
         
-        train_path = Train.get_final_path(1, ['data', 'json_files', 'custom_train.json'])
-        test_path = Train.get_final_path(1, ['data', 'json_files', 'custom_test.json'])
+        #train_path = Train.get_final_path(1, ['data', 'json_files', 'custom_train.json'])
+        #test_path = Train.get_final_path(1, ['data', 'json_files', 'custom_test.json'])
+        train_path = Train.get_final_path(1, ['data', 'json_files', 'instances_train.json'])
+        test_path = Train.get_final_path(1, ['data', 'json_files', 'instances_test.json'])
+        
         model_path = Train.get_final_path(1, ['model','model.ckpt'])
         
         return train_path, test_path, model_path
@@ -160,10 +166,5 @@ if __name__ == '__main__':
     #ap.add_argument("-s", "--split_ratio", required=False, default = 0, help='split ratio', type = float)
     args = vars(ap.parse_args())
     Train(args['train_img_path'], args['test_img_path']).main()
-
-
-
-
-
         
       
