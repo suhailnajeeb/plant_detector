@@ -12,3 +12,6 @@ scipy == 1.8.1
 # added later
 toml
 kaggle
+scikit-learn
+scikit-multilearn
+funcy
