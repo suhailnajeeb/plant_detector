@@ -1,3 +1,5 @@
 [mac]
 data_root = '/Volumes/Crucial X8/plant_detection/global-wheat-detection/'
 
+[linux]
+data_root = '/data/gpfs/projects/punim1800/global-wheat-detection/'
